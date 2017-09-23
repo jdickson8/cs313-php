@@ -2,29 +2,26 @@ body {
     
     background: grey;
     color: black;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .container {
     white-space: nowrap;
     color: navy;
     background-color: grey;
-    vertical-align: middle;
 }
 
 h1 {
     color: navy; 
     background-color: grey;
     white-space: nowrap;
-    vertical-align: top;
+    margin: auto;
     text-align: center;
     font-family: Arial;
 }
 
 span {
     display: inline-block;
-    vertical-align: middle;
     line-height: normal;
     font-family: Serif;
 }
@@ -32,16 +29,41 @@ span {
 p {
     color: black;
     background-color: lightblue;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    text-align: center;
     width: 80%;
     font-family: Times New Roman;
 }
 
 blockquote {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    color: #00ff00;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    color: navy;
     font-family: Georgia;
 }
+
+img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+header {
+    margin-left:auto; 
+    margin-right:auto;
+    text-align: center;
+}
+
+footer {
+    margin-left:auto; 
+    margin-right:auto;
+    text-align: center;
+}
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
+    text-align: center;
+}
+
