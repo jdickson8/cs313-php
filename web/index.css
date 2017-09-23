@@ -1,24 +1,47 @@
-.div-first {
-	background-color: #00BCD4;
-	font-size: 2em;
+body {
+    
+    background: grey;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.div-second {
-	font-size: 0.7em;
+.container {
+    white-space: nowrap;
+    color: navy;
+    background-color: grey;
+    vertical-align: middle;
 }
 
-.div-third {
-	font-size: 0.7em;
+h1 {
+    color: navy; 
+    background-color: grey;
+    white-space: nowrap;
+    vertical-align: top;
+    text-align: center;
+    font-family: Arial;
 }
 
-#div2 {
-	background-color: #4DD0E1;
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-family: Serif;
 }
 
-#div3 {
-	background-color: #B2EBF2;
+p {
+    color: black;
+    background-color: lightblue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-family: Times New Roman;
 }
 
-.hover-bold:hover {
-	font-weight: bold;
+blockquote {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    color: #00ff00;
+    font-family: Georgia;
 }
