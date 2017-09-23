@@ -20,6 +20,24 @@ h1 {
     font-family: Arial;
 }
 
+h3 {
+    color: navy; 
+    background-color: grey;
+    white-space: nowrap;
+    margin: auto;
+    text-align: center;
+    font-family: Arial;
+}
+
+h5 {
+    color: navy; 
+    background-color: grey;
+    white-space: nowrap;
+    margin: auto;
+    text-align: center;
+    font-family: Arial;
+}
+
 span {
     display: inline-block;
     line-height: normal;
@@ -62,8 +80,50 @@ footer {
 }
 
 table {
+    background-color: lightblue;
     margin-left:auto; 
     margin-right:auto;
     text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 80%;
+    border-collapse: collapse;
 }
 
+tr {
+    color: black;
+}
+
+th {
+    padding: 0 10px 0 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    font-size: 18px;
+}
+
+td {
+    border-style: solid;
+    border-left: 1px;
+    border-right: 1px;
+    border-color: black;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+    border-style: solid;
+    border-left: 1px;
+    border-right: 1px;
+    border-color: black;
+}
+
+a:link {
+    color: navy;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
