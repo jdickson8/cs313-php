@@ -1,0 +1,16 @@
+form {
+	text-align: center;
+}
+
+div {
+	color: navy;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    font-family: Times New Roman;
+}
+
+span {
+	color: navy;
+	font-family: Times New Roman;
+}
