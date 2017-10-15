@@ -27,12 +27,14 @@
 
 			<hr/>
 
-		<form action="getBridgeStats.php" method="post">
-			<input type="text" name="player">
-			<input type="text" name="game">
-			<input type="text" name="round">
-			<input type="submit" value="Get Stats" name="submit">
-		</form>
+			<div>
+				<form action="getBridgeStats.php" method="post">
+					<input type="text" name="player">
+					<input type="text" name="game">
+					<input type="text" name="round">
+					<input type="submit" value="Get Stats" name="submit">
+				</form>
+			</div>
 
 		<?php
 
