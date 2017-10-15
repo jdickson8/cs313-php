@@ -14,7 +14,7 @@
 
 	<body>
 
-		<form action="" method="post">
+		<form action="getBridgeStats.php" method="post">
 			<input type="text" name="player">
 			<input type="text" name="game">
 			<input type="text" name="round">

@@ -9,7 +9,7 @@
 	<body>
 
 	<?php
-			$statement = $db->prepare("SELECT * FROM player WHERE player = $_POST['player']");
+			$statement = $db->prepare("SELECT * FROM player WHERE player = $_SESSION['player']");
 			$statement->execute();
 
 			// Go through each result
@@ -21,7 +21,7 @@
 				echo '</p>';
 			}
 
-			$statement = $db->prepare("SELECT * FROM game WHERE game = $_POST['game']");
+			$statement = $db->prepare("SELECT * FROM game WHERE game = $_SESSION['game']");
 			$statement->execute();
 
 			// Go through each result
@@ -33,7 +33,7 @@
 				echo '</p>';
 			}
 
-			$statement = $db->prepare("SELECT * FROM round WHERE round = $_POST['round']");
+			$statement = $db->prepare("SELECT * FROM round WHERE round = $_SESSION['round']");
 			$statement->execute();
 
 			// Go through each result
