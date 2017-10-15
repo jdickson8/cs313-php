@@ -1,6 +1,7 @@
 <?php
 	require "dbConnect.php";
 	$db = get_db();
+	session_start();
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +14,7 @@
 
 	<body>
 
-		<form action="getBridgeStats.php" method="post">
+		<form action="" method="post">
 			<input type="text" name="player">
 			<input type="text" name="game">
 			<input type="text" name="round">
@@ -21,6 +22,13 @@
 		</form>
 
 		<?php
+
+			if (isset($_POST['Submit'])) { 
+ 				$_SESSION['player'] = $_POST['player'];
+ 				$_SESSION['game'] = $_POST['game'];
+ 				$_SESSION['round'] = $_POST['round'];
+ 			}
+
 			$statement = $db->prepare("SELECT * FROM player");
 			$statement->execute();
 
