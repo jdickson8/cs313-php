@@ -1,18 +1,31 @@
 <?php
 	require "dbConnect.php";
 	$db = get_db();
-	session_start();
 ?>
 
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Project1 - Back-Alley Bridge Stats</title>
-		<link rel="stylesheet" type="text/css" href="css1.css">
+		<link href="../index.css" rel="stylesheet" type="text/css">
 		<script src="js1.js"></script>
 	</head>
 
 	<body>
+		<a id="top"></a>
+		<h1>Welcome to John Dickson's home page!</h1>
+			<header>
+				<table>
+					<tr>
+						<th><a href="../assignments.html">Assignments</a></th>
+						<th><a href="https://ilearn.byui.edu/">I-Learn</a></th>
+						<th><a href="https://www.linkedin.com/in/john-dickson-a80b53aa/">Linkedin</a></th>
+						<th><a href="#bottom">Bottom of the page</a></th>
+					</tr>
+				</table>
+			</header>
+
+			<hr/>
 
 	<?php
 			$statement = $db->prepare("SELECT * FROM player WHERE player = $_SESSION['player']");
@@ -51,6 +64,15 @@
 				echo '</p>';
 			}
 		?>
+
+		<hr/>
+
+		<footer>
+			<table><tr><th><a href="#top">Top of page</a></th></tr></table>
+		</footer>
+
+		<br/>
+		<a id="bottom"></a> 
 
 	</body>
 
