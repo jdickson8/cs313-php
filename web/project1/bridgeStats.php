@@ -27,7 +27,7 @@
 
 			<hr/>
 
-			<div>
+			<div style="text-align: center">
 				<form action="getBridgeStats.php" method="post">
 					<input type="text" name="player">
 					<input type="text" name="game">
