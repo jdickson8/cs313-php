@@ -14,7 +14,6 @@
 	<head>
 		<title>Project1 - Back-Alley Bridge Stats</title>
 		<link href="../index.css" rel="stylesheet" type="text/css">
-		<script src="js1.js"></script>
 	</head>
 
 	<body>
@@ -34,8 +33,6 @@
 			<hr/>
 
 		<?php
-
-			session_start();
 			if (isset($_POST['Submit'])) {
 				if (isset($_POST['player'])) {
         			$_SESSION['player'] = $_POST['player'];

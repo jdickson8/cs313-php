@@ -4,7 +4,7 @@
 
 	session_start();
 
-	$username = "user";
+	$username = "username";
 	$password = "password";
 
 	if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
@@ -24,7 +24,6 @@
 	<head>
 		<title>Project1 - Back-Alley Bridge Stats</title>
 		<link href="../index.css" rel="stylesheet" type="text/css">
-		<script src="js1.js"></script>
 	</head>
 
 	<body>
