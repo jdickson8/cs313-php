@@ -1,6 +1,12 @@
 <?php
 	require "dbConnect.php";
 	$db = get_db();
+
+	session_start();
+
+	if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] == false) {
+		header("Location: bridgeStatsStart.php");
+	}
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +19,7 @@
 
 	<body>
 		<a id="top"></a>
-		<h1>Welcome to John Dickson's home page!</h1>
+		<h1>Bridge Stats!</h1>
 			<header>
 				<table>
 					<tr>
@@ -26,15 +32,6 @@
 			</header>
 
 			<hr/>
-
-			<div style="text-align: center">
-				<form action="getBridgeStats.php" method="post">
-					<input type="text" name="player">
-					<input type="text" name="game">
-					<input type="text" name="round">
-					<input type="submit" value="Get Stats" name="submit">
-				</form>
-			</div>
 
 		<?php
 
