@@ -9,6 +9,7 @@
 
 	if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
 		header("Location: bridgeStats.php");
+		die();
 	}
 
 	if (isset($_POST['username']) && isset($_POST['password'])) {
@@ -16,6 +17,7 @@
 
 			$_SESSION['logged_in'] = true;
 			header("Location: bridgeStats.php");
+			die();
 		}
 	}
 ?>
