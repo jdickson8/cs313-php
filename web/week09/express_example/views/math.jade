@@ -1,0 +1,20 @@
+doctype html
+html
+	head
+		title Math Submission Form
+		script(type='text/javascript' src='public/javascripts/functions.js')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		h1 Math Submission Form
+
+		form(action='/results', method='get')
+			select(name='operation')
+				option Add
+				option Subtract
+				option Multiply
+				option Divide
+			input(type='text', name='operand1')
+			input(type='text', name='operand2')
+			br
+			br
+			input(type='submit', value='Get Result')
