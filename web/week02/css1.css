@@ -1,22 +1,22 @@
 .div-first {
-	background-color: #00BCD4;
-	font-size: 2em;
+	background-color: #1f1fff;
+	font-size: 3em;
 }
 
 .div-second {
-	font-size: 0.7em;
+	font-size: 2em;
 }
 
 .div-third {
-	font-size: 0.7em;
+	font-size: 1em;
 }
 
 #div2 {
-	background-color: #4DD0E1;
+	background-color: #1f1fff;
 }
 
 #div3 {
-	background-color: #B2EBF2;
+	background-color: #1f1fff;
 }
 
 .hover-bold:hover {
