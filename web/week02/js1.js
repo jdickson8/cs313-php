@@ -20,18 +20,13 @@ function changeDiv2Color() {
 
 	var color = "#" + textbox.value;
 
-	jQuery(document).ready(function($) {
-		$("div2").on("click", "button", function(event) {
-			$(event.delegateTarget).css("background-color", color);
-		})
+	$("div2").on("click", "button", function(event) {
+		$(event.delegateTarget).css("background-color", color);
 	})
-
 }
 
 function hideDiv3() {
-	jQuery(document).ready(function($){
-		$("div3").on("click", "button", function(event) {
-			$(event.delegateTarget).fadeToggle("slow", "linear");
-		})
+	$("div3").on("click", "button", function(event) {
+		$(event.delegateTarget).fadeToggle("slow", "linear");
 	})
 }
