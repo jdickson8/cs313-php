@@ -20,17 +20,17 @@ function changeDiv2Color() {
 
 	var color = "#" + textbox.value;
 
-	$(document).ready( function() { 
-    	$("#div2").on("click", "button", function(event) {
-			$(event.delegateTarget).css("background-color", color);
+	$(document).ready(function() { 
+    	$("#div2button").click(function() {
+			$(this).css("background-color", color);
 		})
  	});
 }
 
 function hideDiv3() {
-	$(document).ready( function() { 
-    	$("#div3").on("click", "button", function(event) {
-			$(event.delegateTarget).fadeToggle("slow", "linear");
+	$(document).ready(function() { 
+    	$("#hidediv3").click(function() {
+			$(this).fadeToggle("slow", "linear");
 		})
  	});
 }
