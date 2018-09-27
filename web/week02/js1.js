@@ -21,7 +21,7 @@ function changeDiv2Color() {
 	var color = "#" + textbox.value;
 
 	$(document).ready(function() { 
-    	$("#div2button").click(function() {
+    	$("#div2button").one('click', function() {
 			$("#div2").css("background-color", color);
 		})
  	});
@@ -29,7 +29,7 @@ function changeDiv2Color() {
 
 function hideDiv3() {
 	$(document).ready(function() { 
-    	$("#hidediv3").click(function() {
+    	$("#hidediv3").one('click', function() {
 			$("#div3").fadeToggle("slow", "linear");
 		})
  	});
