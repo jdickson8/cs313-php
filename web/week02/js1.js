@@ -1,3 +1,13 @@
+$(document).ready(function() { 
+	$("#div2button").one('click', function() {
+		$("#div2").css("background-color", color);
+	})
+
+	$("#hidediv3").one('click', function() {
+		$("#div3").fadeToggle("slow", "linear");
+	})
+});
+
 function clickMe() {
 	alert("Clicked!");
 }
@@ -19,18 +29,5 @@ function changeDiv2Color() {
 	var textbox = document.getElementById(textbox_id);
 
 	var color = "#" + textbox.value;
-
-	$(document).ready(function() { 
-    	$("#div2button").one('click', function() {
-			$("#div2").css("background-color", color);
-		})
- 	});
 }
 
-function hideDiv3() {
-	$(document).ready(function() { 
-    	$("#hidediv3").one('click', function() {
-			$("#div3").fadeToggle("slow", "linear");
-		})
- 	});
-}
