@@ -1,10 +1,10 @@
 $(document).ready(function() { 
-	$("#div2button").one('click', function() {
+	$("#div2button").click(function() {
 		var color = "#" + document.getElementById("txt2Color").value;
 		$("#div2").css("background-color", color);
 	})
 
-	$("#hidediv3").one('click', function() {
+	$("#hidediv3").click(function() {
 		$("#div3").fadeToggle("slow", "linear");
 	})
 });
