@@ -24,7 +24,7 @@ function changeDiv2Color() {
 		$("div2").on("click", "button", function(event) {
 			$(event.delegateTarget).css("background-color", color);
 		})
-	}
+	})
 
 }
 
@@ -33,5 +33,5 @@ function hideDiv3() {
 		$("div3").on("click", "button", function(event) {
 			$(event.delegateTarget).fadeToggle("slow", "linear");
 		})
-	}
+	})
 }
