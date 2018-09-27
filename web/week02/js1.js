@@ -22,7 +22,7 @@ function changeDiv2Color() {
 
 	$(document).ready(function() { 
     	$("#div2button").click(function() {
-			$(this).css("background-color", color);
+			$("#div2").css("background-color", color);
 		})
  	});
 }
@@ -30,7 +30,7 @@ function changeDiv2Color() {
 function hideDiv3() {
 	$(document).ready(function() { 
     	$("#hidediv3").click(function() {
-			$(this).fadeToggle("slow", "linear");
+			$("#div3").fadeToggle("slow", "linear");
 		})
  	});
 }
