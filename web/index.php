@@ -30,15 +30,7 @@
 
 				<blockquote>"What is better? To be born good or to overcome your evil nature through great effort?"<br/>- Paarthurnax, Elder Scrolls V: Skyrim</blockquote><br/><br/>
 
-				<?php
-
-				date_default_timezone_set('America/Boise');
-
-				$date = date('Y-m-d H:i:s');
-
-				echo "Current time: " . $date;
-
-				?>
+				<blockquote id="timer"></blockquote>
 
 				<br/>
 				 
