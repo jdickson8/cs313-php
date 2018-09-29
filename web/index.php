@@ -24,70 +24,16 @@
 			<hr/>
 
 			<div>
-				<p>John Dickson<br/>SE - Software Engineer<br/>Yakima, WA</p><br/>
+				<p>John Dickson<br/>SE - Software Engineer<br/>Lehi, UT</p><br/>
 
 				<span><img src="images/me.jpg" alt="Me"></span><br/><br/>
 
 				<blockquote>"What is better? To be born good or to overcome your evil nature through great effort?"<br/>- Paarthurnax, Elder Scrolls V: Skyrim</blockquote><br/><br/>
 
+				<blockquote><?php $date = date("D:M:Y"); echo "Current time: " . $date ?></blockquote>
 				<blockquote id="timer"></blockquote>
 
 				<br/>
-
-				<div>
-					<?php
-					//Here you find out what day of the week the first day of the month falls on
-					$day_of_week = date('D', $first_day) ;
-					//Once you know what day of the week it falls on, we know how many blank days //occur before it. If the first day of the week is a
-					//Sunday, then it is zero
-					switch($day_of_week) {
-					case "Sun": $blank = 0; break;
-					case "Mon": $blank = 1; break;
-					case "Tue": $blank = 2; break;
-					case "Wed": $blank = 3; break;
-					case "Thu": $blank = 4; break;
-					case "Fri": $blank = 5; break;
-					case "Sat": $blank = 6; break;
-					}
-					//We then determine how many days are in the current month
-					$days_in_month = cal_days_in_month(0, $month, $year);
-
-					//Here you start building the table heads
-					echo "";
-					echo " $title $year ";
-					echo "SMTWTFS";
-					//This counts the days in the week, up to 7
-					$day_count = 1;
-					echo "";
-					//first you take care of those blank days
-					while ( $blank > 0 ) {
-					echo "";
-					$blank = $blank-1;
-					$day_count++;
-					}
-
-					//sets the first day of the month to 1
-					$day_num = 1;
-					//count up the days, until you've done all of them in the month
-					while ($day_num <= $day_count) {
-					$day_num++;
-					$day_count++;
-					}
-					//Make sure you start a new row every week
-					if ($day_count > 7) {
-					echo "";
-					$day_count = 1;
-					}
-
-					//Finally you finish out the table with some blank details
-					//if needed
-					while ( $day_count > 1 && $day_count) {
-					$day_count++;
-					}
-					echo ""; 
-					?>
-
-				</div>
 				 
 			</div>
 				<hr/>
