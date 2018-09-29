@@ -40,8 +40,7 @@
 					$day_of_week = date('D', $first_day) ;
 					//Once you know what day of the week it falls on, we know how many blank days //occur before it. If the first day of the week is a
 					//Sunday, then it is zero
-					switch($day_of_week)
-					{
+					switch($day_of_week) {
 					case "Sun": $blank = 0; break;
 					case "Mon": $blank = 1; break;
 					case "Tue": $blank = 2; break;
@@ -61,8 +60,7 @@
 					$day_count = 1;
 					echo "";
 					//first you take care of those blank days
-					while ( $blank > 0 )
-					{
+					while ( $blank > 0 ) {
 					echo "";
 					$blank = $blank-1;
 					$day_count++;
@@ -71,19 +69,19 @@
 					//sets the first day of the month to 1
 					$day_num = 1;
 					//count up the days, until you've done all of them in the month
-					while ( $day_num $day_num ";
+					while ($day_num <= $day_count) {
 					$day_num++;
 					$day_count++;
+					}
 					//Make sure you start a new row every week
-					if ($day_count > 7)
-					{
+					if ($day_count > 7) {
 					echo "";
 					$day_count = 1;
 					}
 
 					//Finally you finish out the table with some blank details
 					//if needed
-					while ( $day_count >1 && $day_count ";
+					while ( $day_count > 1 && $day_count) {
 					$day_count++;
 					}
 					echo ""; 
