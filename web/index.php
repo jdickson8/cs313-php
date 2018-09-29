@@ -30,8 +30,7 @@
 
 				<blockquote>"What is better? To be born good or to overcome your evil nature through great effort?"<br/>- Paarthurnax, Elder Scrolls V: Skyrim</blockquote><br/><br/>
 
-				<blockquote><?php $date = date("D:M:Y"); echo "Current time: " . $date ?></blockquote>
-				<blockquote id="timer"></blockquote>
+				<blockquote><?php $date = date("d-m-y"); echo "Current time: " . $date ?><blockquote id="timer"></blockquote></blockquote>
 
 				<br/>
 				 
