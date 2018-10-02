@@ -25,31 +25,22 @@
       <hr/>
 
     <form action="prove03.php" method="post">
-      <img src="../images/toyota.jpg" height="auto" width="auto" alt="Toyota"/><br/>
-      <span id="product1"><b>Toyota: </b></span>
-      <select id="toyota">
-        <option name="toyota" value="camry">Camry</option>
-        <option name="toyota" value="avalon">Avalon</option>
-        <option name="toyota" value="takoma">Takoma</option>
-        <option name="toyota" value="tundra">Tundra</option>
+      <span id="product1"><b>Name: </b></span>
+      <input type="text" name="name"><br/><br/>
+
+      <span id="product2"><b>Email: </b></span>
+      <input type="text" name="email"><br/><br/>
+
+      <span id="product3"><b>Major: </b></span>
+      <select id="major">
+        <option name="major" value="cs">Computer Science</option>
+        <option name="major" value="web">Web Design and Development</option>
+        <option name="major" value="cit">Computer Information Technology</option>
+        <option name="major" value="ce">Computer Engineering</option>
       </select><br/><br/>
 
-      <img src="../images/ford.jpg" height="auto" width="auto" alt="Ford"/><br/>
-      <span id="product2"><b>Ford: </b></span>
-      <select id="ford">
-        <option name="ford" value="mustang">Mustang</option>
-        <option name="ford" value="f150">F-150</option>
-        <option name="ford" value="rapter">Rapter</option>
-        <option name="ford" value="f250">F-250</option>
-      </select><br/><br/>
-
-      <img src="../images/dodge.jpg" height="auto" width="auto" alt="Dodge"/><br/>
-      <span id="product3"><b>Dodge: </b></span>
-      <select id="dodge">
-        <option name="dodge" value="viper">Viper</option>
-        <option name="dodge" value="charger">Charger</option>
-        <option name="dodge" value="ram">Ram</option>
-      </select><br/><br/><br/>
+      <span id="product4"><b>Comments: </b></span>
+      <input type="textbox" name="comments"><br/><br/>
 
       <input type="submit" name="placeOrder" id="submitButton"
           value="Place Order">
