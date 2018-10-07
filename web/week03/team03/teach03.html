@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Form Submission</title>
+    <link href="../../index.css" rel="stylesheet" type="text/css">
+    <link href="../prove03.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <a id="top"></a>
+    <h1>Submit a form!</h1>
+      <header>
+        <table>
+          <tr>
+            <th><a href="../../index.html">Home</a></th>
+            <th><a href="../../assignments.html">Assignments</a></th>
+            <th><a href="https://ilearn.byui.edu/">I-Learn</a></th>
+            <th><a href="#bottom">Bottom of the page</a></th>
+          </tr>
+        </table>
+      </header>
+
+      <hr/>
+
+    <form action="prove03.php" method="post">
+      <span id="product1"><b>Name: </b></span>
+      <input type="text" name="name"><br/><br/>
+
+      <span id="product2"><b>Email: </b></span>
+      <input type="text" name="email"><br/><br/>
+
+      <span id="product3"><b>Major: </b></span><br/>
+      <input type="radio" id="major" name="major" value="Software Engineer">Software Engineer
+      <input type="radio" id="major" name="major" value="Computer Science">Computer Science
+      <input type="radio" id="major" name="major" value="Web Design and Development">Web Design and Development
+      <input type="radio" id="major" name="major" value="Computer Information Technology">Computer Information Technology
+      <input type="radio" id="major" name="major" value="Computer Engineering">Computer Engineering
+      </select><br/><br/>
+
+      <span id="product4"><b>Continents: </b></span><br/>
+      <input type="checkbox" name="continents[]" value="North America">North America
+      <input type="checkbox" name="continents[]" value="South America">South America
+      <input type="checkbox" name="continents[]" value="Asia">Asia
+      <input type="checkbox" name="continents[]" value="Africa">Africa
+      <input type="checkbox" name="continents[]" value="Australia">Australia
+      <input type="checkbox" name="continents[]" value="Antartica">Antartica
+      <input type="checkbox" name="continents[]" value="Europe">Europe
+
+      <span id="product5"><b>Comments: </b></span><br/>
+      <textarea rows="4" cols="50" name="comments"></textarea><br/><br/>
+
+      <input type="submit" name="submit" id="submitButton"
+          value="Submit">
+    </form>
+
+    <hr/>
+         
+      <footer>
+        <table><tr><th><a href="#top">Top of page</a></th></tr></table>
+      </footer>
+
+      <br/>
+      <a id="bottom"></a> 
+  </body>
+</html>
