@@ -22,7 +22,7 @@ if(isSet($_POST['product3']))
 			<header>
 				<table>
 					<tr>
-						<th><a href="../index.html">Home</a></th>
+						<th><a href="../index.php">Home</a></th>
             			<th><a href="../assignments.html">Assignments</a></th>
             			<th><a href="https://ilearn.byui.edu/">I-Learn</a></th>
             			<th><a href="#bottom">Bottom of the page</a></th>
